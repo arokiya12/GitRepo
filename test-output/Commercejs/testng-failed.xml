@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Commercejs]" guice-stage="DEVELOPMENT" verbose="5">
+  <parameter name="url" value="https://commercejs-demo-store.netlify.app/"/>
+  <test thread-count="2" parallel="tests" name="EdgeBrowserTesting(failed)" verbose="5">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="day1.TC_001Commerce">
+        <methods>
+          <include name="preconditions"/>
+          <include name="printorderId"/>
+          <include name="postconditions"/>
+        </methods>
+      </class> <!-- day1.TC_001Commerce -->
+    </classes>
+  </test> <!-- EdgeBrowserTesting(failed) -->
+  <test thread-count="2" parallel="tests" name="FirefoxBrowserTesting(failed)" verbose="5">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="day1.TC_001Commerce">
+        <methods>
+          <include name="preconditions"/>
+          <include name="printorderId"/>
+          <include name="postconditions"/>
+        </methods>
+      </class> <!-- day1.TC_001Commerce -->
+    </classes>
+  </test> <!-- FirefoxBrowserTesting(failed) -->
+</suite> <!-- Failed suite [Commercejs] -->
